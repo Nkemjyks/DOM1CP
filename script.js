@@ -33,7 +33,7 @@ let delBa = document.querySelector('#delBa');
 
 // other declarations
 let heartArr = document.querySelectorAll('.fa-heart');
-let x = false;
+
 
 
 let update = () => {
@@ -99,13 +99,13 @@ delBa.addEventListener('click', () => {
 heartArr.forEach((e)=>{
     e.addEventListener('click', () => {
              
-        if(x==false){
-            e.style.color = 'red';
-            x = !x;
+        if(e.style.color == 'red'){
+            e.style.color = 'black';
+            
         }
         else{
-            e.style.color = 'black'
-            x = !x;
+            e.style.color = 'red';
+             
         }
     })
 })
